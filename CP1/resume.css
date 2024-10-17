@@ -1,0 +1,87 @@
+ /*
+    Name: Mia Mutadich
+    CS 132 Fall 2024
+    Date: October 14th, 2024
+    This is the styles.css page for my website which details
+    my experience, education and projects, like that of a resume. 
+    It is used by the resume.html page only as it features elements
+    like navigation bar styling that is unique to this page and 
+    list formatting.
+*/
+
+/* Navigation Bar formatting */
+
+nav {
+    position: sticky;
+    justify-content: space-evenly;
+    bottom: 0;
+}
+
+nav section, .cards div{
+    border-radius: 10%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 5%;
+}
+
+nav section{
+    background-color: #E17878;
+    width: 200px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+nav section a{
+    color: #E0D9D2;
+    text-decoration: none;
+    font-size: 3vw;
+}
+
+/* Semantic Formatting */
+
+ul li{
+    padding: 20px;
+}
+
+.date, .location{
+    font-weight: normal;
+}
+
+.date{
+    font-style:italic;
+    font-size: 1.5vw;
+}
+
+/* Flex containers*/
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#education div {
+    width: 80%;
+}
+
+h3, a span, #education div h3,
+.project-flex span {
+    color: #9eb371;
+}
+
+#education div span {
+    font-weight: bold;
+}
+
+ul li, .location, div span{
+    font-size: 2vw;
+}
+
+.cards div {
+    width: 60%;
+    border-color: white;
+    background-color: white;
+}
+
+.project-flex span, nav section {
+    text-align: center;
+}

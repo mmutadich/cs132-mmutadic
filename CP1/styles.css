@@ -1,0 +1,68 @@
+ /*
+    Name: Mia Mutadich
+    CS 132 Fall 2024
+    Date: April 1st, 2024
+    This is the styles.css page for my website which details
+    my experience, education and projects, like that of a resume. 
+    It is used by all pages in my portfolio to give the site a 
+    consistent look and feel. Currently maintains a beige, 
+    green, pink and gray theme to give a friendly vibe to my resume.
+*/
+
+body {
+    font-family: 'Times New Roman', serif;
+    color: #767771;
+    background: #E0D9D2;
+}
+
+main {
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+/* Semantic Formatting */
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 5vw;
+}
+
+h2 {
+    font-size: 4vw;
+}
+
+h3 {
+    font-size: 2.5vw;
+}
+
+strong {
+    color: #E17878; 
+}
+
+.italic{
+    font-style: italic;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.section-heading {
+    color:#E17878;
+    text-align: center;
+}
+
+.align-center{
+    align-items: center;
+}
+
+/* Image Formatting*/
+
+.socials{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+}
