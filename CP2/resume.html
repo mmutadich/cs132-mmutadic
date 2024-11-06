@@ -1,0 +1,231 @@
+ <!--
+     Name: Mia Mutadich
+     CS 132 Fall 2024
+     Date: October 14th, 2024
+     This is the resume.html page for my website which details
+     my education, experience and projects, like that of a resume. 
+     This page specifically displays my education, experience and projects.
+-->
+
+
+       <!DOCTYPE html>
+       <html lang="en">
+           <head>
+               <link href="resume.css" rel="stylesheet">
+               <link href="styles.css" rel="stylesheet">
+               <script src="utils.js"></script>
+                <script src="resume.js" defer></script>
+               <title>
+                   Mia Mutadich Resume
+               </title>
+           </head>
+           <body>
+               <main>
+                <section id="education">
+                    <h2 class="bold section-heading"> Education </h2>
+                    <section class="flex-container">
+                        <div>
+                            <h3>
+                                Notting Hill and Ealing High 
+                            </h3 >
+                            <p class="date">
+                                Sept 2018 - July 2022
+                            </p>
+                            <span> High School Diploma</span>
+                        </div>
+                        <div>
+                            <h3>
+                                California Institute of Technology
+                            </h3>
+                            <p class="date">
+                                Sept 2022 - Present
+                            </p>
+                            <span> Bachelors of Science; Major in Computer Science</span>
+                        </div>
+                    </section>
+                </section>
+                <section id="experience">
+                    <h2 class="bold section-heading"> Experience </h2>
+                    <section>
+                        <section class="flex-container">
+                            <h3>
+                                <a href="https://debuggi.ng/24wi/">
+                                    <span>
+                                        Teaching Assistant
+                                    </span>
+                                </a>
+                                <span class="location">
+                                    | Introduction to Programming Methods at Caltech 
+                                </span>
+                            </h3> 
+                        </section> 
+                        <p class="date">
+                            January 2024 - March 2024
+                        </p>
+                        <ul>
+                            <li>
+                                Led office hours for 20+ students, actively employing learning models to foster a supportive 
+                                innovative environment and coordinating with other teaching assistants to provide comprehensive support. 
+                            <li>
+                                Independently oversaw a lab section of 15-20 students, guiding them in completing partner 
+                                projects in Java and promoting collaborative learning through interactive sessions and peer-to-peer mentoring.
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <section class="flex-container">
+                            <h3>
+                                <a href="https://dknweb.caltech.edu">
+                                    <span>
+                                        Research Intern
+                                    </span>
+                                </a>
+                                <span class="location">
+                                    | Summer Undergraduate Research Fellowship
+                                </span>
+                                <a href="https://github.com/mmutadich/image-restoration-model">
+                                    <img  src="imgs/git.svg" alt="gitHub" class="socials">
+                                </a>
+                            </h3> 
+                        </section> 
+                        <p class="date">
+                            April 2023 - September 2023
+                        </p>
+                        <ul>
+                            <li>
+                                Spearheaded a group of 3 graduate students to design and optimize a convolutional neural network to
+                                 effectively denoise three-dimensional bacterial biofilm images in Python using TensorFlow frameworks.
+                            </li>
+                            <li>
+                                Obtained high-quality restorations for 90% of tested data even with a 60-fold reduced light dosage
+                            </li>
+                            <li>
+                                Built and implemented a custom algorithm to calculate the signal-to-noise ratio (SNR) for training 
+                                and testing models on biofilm images, ensuring precise measurement of image quality across noise levels.
+                            </li>
+
+                        </ul>
+                    </section>
+                </section>
+                <section id="projects">
+                    <h2 class="bold section-heading"> Projects </h2>
+                    <section class="cards">
+                        <section class="card">
+                            <div>
+                                <h3>
+                                    Physics Engine
+                                    <a href="https://github.com/mmutadich/image-restoration-model">
+                                        <img  src="imgs/git.svg" alt="gitHub" class="socials">
+                                    </a>
+                                </h3>
+                                <p class="date">
+                                    April 2023 - June 2023
+                                </p>
+                            </div>
+                            <div class="hidden">
+                                <ul>
+                                    <li>
+                                        Developed large software deliverables in C using POSIX and APISs to ensure optimal performance.
+                                    </li>
+                                    <li>
+                                        Facilitated dynamic and realistic interactions between various game elements such as players 
+                                        and obstacles through the application of complex physical forces like gravity and the normal force.
+                                    </li>
+                                    <li>
+                                        Enhanced the engine's performance and scalability by designing and integrating custom memory 
+                                        allocation strategies, significantly reducing overhead and improving real-time responsiveness.
+                                    </li>
+                                </ul> 
+                            </div>
+                        </section>
+                        <section class="card">
+                            <div>
+                                <h3>
+                                    Dynamic Memory Allocator for C Programs
+                                    <a href="https://github.com/mmutadich/dynamic-memory-allocator">
+                                        <img  src="imgs/git.svg" alt="gitHub" class="socials">
+                                    </a>
+                                </h3>
+                                <p class="date">
+                                    November 2023
+                                </p> 
+                            </div>
+                            <div class="hidden">
+                                <ul>
+                                    <li>
+                                        Built a dynamic memory allocator using an explicit linked list to track available block payloads
+                                        to allow for faster traversal and manipulation of the free list during allocation and deallocation techniques.
+                                    </li>
+                                    <li>
+                                        Used coalescing and block splitting techniques to optimize space utilization, achieving 100% 
+                                        efficiency.
+                                    </li>
+                                </ul> 
+                            </div>
+                        </section>
+                        <section class="card">
+                            <div>
+                                <h3>
+                                    Poem Generation via Advanced Machine Learning Models
+                                    <a href="https://github.com/mmutadich/sonnet-writing-HMM-and-RNN">
+                                        <img  src="imgs/git.svg" alt="gitHub" class="socials">
+                                    </a>
+                                </h3>
+                                <p class="date">
+                                    February 2024
+                                </p> 
+                            </div>
+                            <div class="hidden">
+                                <ul>
+                                    <li>
+                                        Developed a Baum-Welch optimized unsupervised Hidden Markov Model that learned word-syllable 
+                                        associations, thematic elements, and metrical patterns to generate sophisticated poetic structures.
+                                    </li>
+                                    <li>
+                                        Implemented an LSTM-based Recurrent Neural Network in to leverage its capacity for processing 
+                                        and remembering sequential data for effectively replicating rhyme schemes and linguistic patterns.
+                                    </li>
+                                </ul> 
+                            </div>
+                        </section>
+                        <section class="card">
+                            <div>
+                                <h3>
+                                    Full Stack Web Development
+                                </h3>
+                                <p class="date">
+                                    Sept 2021 - January 2022
+                                </p>
+                            </div>
+                            <div class="hidden">
+                                <ul>
+                                    <li>
+                                        Designed an end-to-end mentoring platform using Flask, integrating database management, UX design, 
+                                        and developing backend code in JavaScript with a matching algorithm based on graph theory.
+                                    </li>
+                                    <li>
+                                        Outperformed previous pairing algorithm and replaced it at my high school - has 300 active users.
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                    </section>
+                </section>
+                <nav>
+                    <section>
+                        <a href="#education"> Education</a>
+                    </section>
+                    <section>
+                        <a href="#experience"> Experience</a>
+                    </section>
+                    <section>
+                        <a href="#projects"> Projects</a>
+                    </section>
+                    <section>
+                        <a href="index.html">Home</a>
+                    </section>
+                </nav>
+               </main>
+       
+           </body>
+           

@@ -1,0 +1,63 @@
+ /*
+    Name: Mia Mutadich
+    CS 132 Fall 2024
+    Date: October 14th, 2024
+    This is the styles.css page for my website which details
+    my experience, education and projects, like that of a resume. 
+    It is used by the home.html page only as it features elements
+    like slideshow features that are unique to this page.
+*/
+
+.row-flex{
+    display: flex;
+    flex-direction: row;
+}
+
+#large-horizontal{
+    justify-content: space-between;
+}
+
+.images{
+    justify-content: space-evenly;
+}
+
+.arrow-button:active {
+    transform: translate(0px, 2px);
+}
+
+/* Section Formatting */
+
+#vertical-images{
+    width: 20%;
+}
+
+#vertical-text{
+    width: 75%;
+}
+
+#name{
+    color: #9eb371;
+}
+
+/* Image formatting */
+.arrow-button{
+    width: 20px;
+    height: 20px;
+    margin: auto;
+}
+
+#profile-picture {
+    width: 100%;
+    border-radius: 50%;
+}
+
+#carousel{
+    width: 60%;
+}
+
+.fake-h1 {
+    font-size: 5vw;
+    font-style: italic;
+    font-weight: bold;
+
+}

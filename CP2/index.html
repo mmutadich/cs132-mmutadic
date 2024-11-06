@@ -1,0 +1,79 @@
+ <!--
+     Name: Mia Mutadich
+     CS 132 Fall 2024
+     Date: October 14th, 2024
+     This is the home.html page for my website which details
+     my experience, education and projects, like that of a resume. 
+     This page specifically displays an introduction, a profile
+     photo and an about me section with a slideshow (currently 
+     a proof of concept) of my hobbies.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="https://fonts.google.com/specimen/Roboto+Mono">
+        <script src="utils.js"></script>
+        <script src="index.js" defer></script>
+        <!-- <script defer src=".js"></script> -->
+        <title>
+            Mia Mutadich Porfolio
+        </title>
+    </head>
+    <body>
+        <main>
+            <section class="row-flex align-center" id="large-horizontal">
+                <section id="vertical-text">
+                    <h1>
+                        <strong>
+                            WELCOME!
+                        </strong>
+                        <p> 
+                            I'm 
+                            <span id="name">
+                                Mia Mutadich
+                            </span>
+                            a
+                        </p>
+                        <p class="italic"> 
+                            Software Developer,
+                        </p>
+                    </h1>
+                    <h2>
+                        Interested in my 
+                        <a href="resume.html" id="resume-link">
+                            <strong>
+                                resume?
+                            </strong>
+                        </a>
+                    </h2>
+                </section>
+                <section id="vertical-images" class="align-center">
+                    <img src="imgs/profile-pic.png" alt="Profile Picture" id="profile-picture">
+                    <div class="row-flex images">
+                        <a href="https://www.linkedin.com/in/mia-mutadich-317b77253/">
+                            <img src="imgs/In.png" alt="linkedIn" class="socials">
+                        </a>
+                        <a href="https://github.com/mmutadich">
+                            <img  src="imgs/git.svg" alt="gitHub" class="socials">
+                        </a>
+                        <a href="mailto:mmutadich@gmail.com">
+                            <img src="imgs/mail.png" alt="mailto" class="socials">
+                        </a>
+                    </div>
+                </section>
+            </section>
+            <section>
+                <h2 class="bold pink section-heading"> About Me </h2>
+                <div class="row-flex images">
+                    <img src="imgs/prev.png" alt="prev" class="arrow-button" id="prev-btn">
+                    <img src="carousel/waterpolo.jpg" alt="carousel" id="carousel">
+                    <img src="imgs/next.png" alt="next" class="arrow-button" id="next-btn">
+                </div>
+            </section>
+        </main>
+
+    </body>
+</html>
