@@ -1,0 +1,99 @@
+body{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 100;
+    cursor: url('imgs/cursor.png');
+}
+
+.hidden{
+    display: none;
+}
+
+/* main > section{
+    background-image: url('imgs/cow-print.jpeg');
+    background-repeat: repeat;
+} */
+
+h1 {
+    font-size: 5vw;
+}
+
+h2 {
+    font-size: 4vw;
+}
+
+h3 {
+    font-size: 2.5vw;
+}
+
+
+h1, h2, h4{
+  text-align: center;  
+}
+
+h4 {
+    font-style: italic;
+}
+
+img {
+    display: block;
+}
+
+#bundle-icon {
+    height: 200px;
+}
+
+.products img, .bundle-option img {
+    width: 300px;
+    max-height: 300px;
+    padding: 15px 0px;
+}
+
+img[alt="plus"] {
+    width: 75px;
+}
+
+.products, #image-nav, .bundle-option{
+    display: flex;
+}
+
+#image-nav, .bundle-option{
+    align-items: center;
+}
+
+.bundle-option{
+    justify-content: space-evenly;
+}
+
+#image-nav {
+    justify-content: center;
+}
+
+.products{
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.products > div, .bundle-option > div{
+    background-color: #967969;
+    padding: 0px 20px;
+    border-radius: 5%;
+}
+
+.bundle-option > div{
+    height: 500px;
+}
+
+.products img, .bundle-option img{
+    margin: 0 auto;
+}
+
+
+select {
+    height: 30px;
+}
+
+select, .products > div{
+    cursor: pointer;
+} 
+  
+ 

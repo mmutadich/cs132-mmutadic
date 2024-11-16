@@ -1,0 +1,11 @@
+select {
+    max-width: 100%;
+    width: 400px;
+    padding-left: 10px;
+    border: 2px solid #DDDDDD;
+    border-radius: 10px;
+ }
+
+ h3 {
+    text-align: center;
+ }
