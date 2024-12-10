@@ -1,0 +1,11 @@
+#composite {
+  position: relative;
+  height: 60px;
+  width: 60px;
+  border: 1px solid black;
+}
+
+img {
+  position: absolute;
+  top: 0; /* not sure this is actually needed */
+}

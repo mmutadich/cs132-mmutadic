@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+EH: Modified HTML from StackOverflow demo
+https://stackoverflow.com/questions/31909577/click-through-transparent-image-pixel/58029151#58029151
+
+Shows how to use HTML5 Canvas with transparent pngs
+to determine which one was selected.
+ -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="bird-styles.css">
+  <script src="stackoverflow-demo.js" defer></script>
+</head>
+<body>
+<div id="composite">
+  <!-- Note: Not sure data-href is actually going to be needed. -->
+  <img alt="Red paint" src="red.png" data-href="page3.html">
+  <img alt="Black birds" src="bird.png" data-href="page2.html">
+  <img alt="Cute bird" src="birds.png" data-href="page1.html">
+</div>
+
+</body>
+</html>
