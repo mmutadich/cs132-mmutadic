@@ -1,0 +1,78 @@
+ /*
+    Name: Mia Mutadich
+    CS 132 Fall 2024
+    Date: December 4th, 2024
+    This is the styles.css page for my website which gives you 
+    your Big Three astrology chart based on your time of birth, 
+    date of birth and place of birth. My website uses the Google
+    Maps API to suggest places in a certain format while a user
+    enters their place of birth, find the lat and lng of their
+    place of birth and calculates the timezone in hours. It also 
+    uses an astrology API that, given these lat and lng coordinates,
+    the timezone and other details returns the signs for each
+    placement.
+*/
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 100;
+    background: #4b0082;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+input, button {
+    border-radius: 10px;
+}
+
+button {
+    height: 40px;
+    margin: 20px;
+}
+
+body, a {
+    color: #FFFFFF;
+}
+
+a {
+    text-decoration: none;
+}
+
+main, #form-section, #form, #display-section, #title, footer {
+    display: flex
+}
+
+main, #form-section, #display-section {
+    flex-grow: 1;
+    height: 80vh;
+}
+
+#form-section, #form, #display-section, footer{
+    flex-direction: column;
+    gap: 10px;
+}
+
+#display-section {
+    border: 40px solid transparent;
+    border-image: url('imgs/border-star.png') 40 repeat;
+}
+
+#form, #title, #display-section {
+    align-items: center;
+}
+
+#form-section, #display-section {
+    flex-basis: 300px;
+    overflow-y: auto;
+    max-height: 80vh;
+    margin-left: 10px;
+    margin-right: 10px;
+}

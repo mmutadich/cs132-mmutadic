@@ -1,0 +1,149 @@
+CS132 – Web Development
+	Fall 2024
+	
+
+Creative Project 3 Written
+The written component of CP3 (cp3-written.pdf) guides your review of the material on asynchronous programming and APIs and has you connect the concepts to your own experiences in the real world.
+This is a required part of CP3, and you supplement it with any reflection/diagrams similar to CP1/CP2 if you'd like for extra credit.
+Students are allowed to collaborate on this written component (via Discord or in-person OH), as long as the answers are written individually.
+As written answers, these are more open-ended and will be graded on demonstrated understanding of the material, going further into the concepts introduced in class, and connecting to your own experiences as users, developers, and members of society. You should aim to spend 45-60 minutes if you've been caught up with the material and are welcome to ask on Discord if you have questions.
+________________
+
+
+Asynchronous Code, Promises, and Fetch
+Over the term, we've seen various applications of asynchronous programming, starting with the event listener. We introduced "Promises" in Module 3 with fetch; fetch was added to browser specifications in 2015 (you can read a brief overview here if interested).
+1. Provide the code for one of your fetch calls you might make to an API you chose for CP3 (whether you use then/catch or async/await syntax is up to you, but should start from the fetch statement and end with an error-handling function).
+try {
+           let response = await fetch(ASTRO_URL, {
+               method: 'POST',
+               headers: {
+                   "authorization": auth,
+                   "Content-Type":'application/json',
+               },
+               body: JSON.stringify(params)
+           });
+           response = checkStatus(response);
+           const resp = await response.json();
+           const sun = resp.houses[0].sign;
+           const moon = resp.houses[1].sign;
+           const rising = resp.aspects[0].sign;
+           addFetchResults(sun, moon, rising);
+       } catch {
+           addResults();
+           handleError("We were unable to process get your chart! Double check the format of your DOB & TOB");
+       }
+   }
+
+
+
+
+
+
+2. In a bullet list or an annotated diagram, summarize the process of a fetch call, using your example. We are looking for you to demonstrate an understanding of fetch and the HTTP Request/Response protocol with a focus on datatypes at each step of execution (including Promises, their resolved values or errors, and callback functions) and the role of the client vs. server in the process
+
+
+1. We request a JSON object from the Astrology API using certain parameters and an authorization token by using fetch to send a POST request.
+2. Since this function is an asynchronous we can use await to retrieve the response object from the Promise returned by fetch
+3. We then pass the response object into checkStatus to check if the request resulted in an error or success 
+4. If there was an error, we have to catch it (since it wont throw an error automatically because the response is just an object) and handle it with the handleError function to throw the appropriate error message in the console
+5. If the request was successful we will parse the request as a JSON object but since .json() returns a Promise we must use await to get the object itself
+
+
+3. In 1-2 sentences, what is the purpose of checkStatus?
+To catch if the response to the request was an error and then throw an error otherwise the error will continue to be handles like a successful response and we will get errors uncaught errors later in the code.
+
+
+API Documentation
+Web APIs are an extremely powerful way to collect and share data on the web, with use cases in business, social networking, government, healthcare, education, research, etc. And unfortunately, in order of decreasing quality (consider the need for sharing data efficiently for research at institutions like Caltech!). It's not just design and implementation that makes an API usable though.
+API documentation is one of the most important things when it comes to designing and using APIs. You've been getting practice learning APIs through their documentation, and El talked about how some APIs are better than others. In the Final Project, you'll also be expected to write good API documentation (at the start! You should have a draft going…) so that others could clearly know how and when to use your APIs without knowing the implementation details.
+In a previous lecture, students were to identify 3 APIs and reflect on their documentation. Briefly identify:
+3 or more things that are particularly important for clients of API documentation
+Spotify API - I thought the interactive code snippets really helped me understand what the different parameters did and the format that inputs should be in especially for addSongsToSpotifyPlaylist()
+Google Maps API - They used YouTube videos alongside documentation that would explain what you need to use and why and where while giving you snippets of code. I thought this was really useful because there was a lot of detail in the page self which would help someone with specific bugs but this video helped me get started and navigate an otherwise overwhelming website.
+Astrology API - This was the easiest API to use because it had minimal documentation, included code snippets and parameter requirements and an example of the output and only included necessary detail. I didn’t feel overwhelmed and appreciated that I didn't need to enter a quest to search for what my parameters required. 
+
+
+2 or more things that make an API difficult or unreliable to use
+If an API must be paid for monthly or paid for at all it makes it unreliable to use because fees might change, different APIs might move to different price plans etc. These companies are never explicit with which specific capabilities are included in each package and then like me you get scammed. 
+I think overwhelming design can make users panic and find it hard to know where to start. I found this true with one of the Google APIs  https://developers.google.com/maps/documentation/javascript/geocoding
+I think there is a balance between enough detail to be able to debug and unnecessary detail that will confuse first time users.
+Error-Handling and HTTP Status Codes
+1. What are two reasons the API would appropriately return a 400-level error to a fetch request? A 500-level error?  You don't need to use the actual behavior of the API, but you can identify reasonable causes if the API was designed to handle different cases with the appropriate codes.
+400 error: access token is expired/ incorrect parameters (your request is not right)
+500 error: internal server error so you know that it isn't your request that is failing but their infrastructure 
+2. How would you modify your code to display a different message to a user depending on the cause of the error (hint: there are a few reasonable solutions here)?
+Make a dictionary for the codes and the appropriate messages and then when you catch the error throw the error message that is the value of the associated error code key
+APIs in the Real World and the Network Debugger
+In this exercise, we want to make sure you 1) are comfortable using the debugger and Network tab for CP3 onward 2) develop a growing awareness of network requests and data transferred as a user of the web, and 3) build strategies for refining your own API endpoint and response schema design.
+VIsit a webpage of your choosing. Identify 1 (or more) features that likely use an HTTP fetch request (e.g. a search button to search for all local coffee products based on checkboxes for options); predict the parameters/schema, and use the Network tab to compare the results with what you predicted. Part of this exercise is to get you comfortable with the debugger and Network tab for CP3 and the Final Project if you haven't already.
+1. Webpage: Accuweather
+2. Feature(s) chosen: search button to search for weather in a location
+3. Prediction of endpoint design/possible query/path parameters ("Request" in Network tab):
+Params = {lat: ____, 
+lng :______, 
+api_key: _____}
+4. Prediction of information returned by fetch request ("Response" in Network tab)
+Params = {lat: ____, 
+lng :______, 
+api_key: _____}
+5. Actual endpoint:
+{
+City: ____
+}
+6. Actual schema/response result
+{
+   "coord": {
+      "lon": 7.367,
+      "lat": 45.133
+   },
+   "weather": [
+      {
+         "id": 501,
+         "main": "Rain",
+         "description": "moderate rain",
+         "icon": "10d"
+      }
+   ],
+   "base": "stations",
+   "main": {
+      "temp": 284.2,
+      "feels_like": 282.93,
+      "temp_min": 283.06,
+      "temp_max": 286.82,
+      "pressure": 1021,
+      "humidity": 60,
+      "sea_level": 1021,
+      "grnd_level": 910
+   },
+   "visibility": 10000,
+   "wind": {
+      "speed": 4.09,
+      "deg": 121,
+      "gust": 3.47
+   },
+   "rain": {
+      "1h": 2.73
+   },
+   "clouds": {
+      "all": 83
+   },
+   "dt": 1726660758,
+   "sys": {
+      "type": 1,
+      "id": 6736,
+      "country": "IT",
+      "sunrise": 1726636384,
+      "sunset": 1726680975
+   },
+   "timezone": 7200,
+   "id": 3165523,
+   "name": "Province of Turin",
+   "cod": 200
+}
+
+
+Applying APIs to Privacy, Security, Ethics, and Accessibility
+This final exercise gets students connecting the material to the real-world; part of the learning outcomes of CS 132 are to develop mindsets in these areas, using your own experience as users of the web to become better web developers. We are giving you some freedom to explore a topic of your choice; choose 1 (of course, you may choose more) of the following to answer. For full credit, we're looking for approximately 5-10 minutes spent on this exercise.
+Option 3: Suppose you are designing an API for a new Caltech social media platform where public posts are visible to everyone. A feature you want to include in order to improve user experience is fetching posts by location. What are the potential privacy concerns associated with including this feature, and what are a few potential ways you could address them? In general, how should API designers balance functionality vs. user privacy?
+
+If a user inspects the webpage and looks at the response they could find the location of a user and stalk them which would be a massive breach in privacy. So we need to anonymise parts of the response so that no one can hack the website.  Balance functionality and privacy by only asking for necessary information to the minimal degree of precision.
