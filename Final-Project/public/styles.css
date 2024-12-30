@@ -1,0 +1,36 @@
+
+/**
+ * CS 132
+ *
+ * Author: Mia Mutadich
+ * CSS file shared by all pages of an e-commerce store that sells meats and dairy.
+ */
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 100;
+}
+
+.hidden {
+    display: none !important;
+}
+
+h1 {
+    font-size: 5vw;
+}
+
+h2 {
+    font-size: 4vw;
+}
+
+h3 {
+    font-size: 2.5vw;
+}
+
+h1, h2, h4 {
+    text-align: center;  
+}
+
+h4 {
+    font-style: italic;
+}

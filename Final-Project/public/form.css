@@ -1,0 +1,54 @@
+/**
+ * CS 132
+ *
+ * Author: Mia Mutadich
+ * CSS file for the page to suggest a new item for an e-commerce store that sells meats and dairy.
+ */
+
+body {
+    background-color: #ffb6c1;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+h2, li > a, a:hover{
+    color: #AA336A;
+}
+
+h3 {
+    margin: 1em;
+}
+
+form {
+    margin: 20px;
+}
+label, .form-field, #submit {
+    font-size: xx-large;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-field, #submit {
+    margin-bottom: 15px;
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+#submit{
+    font-size: x-large;
+}
+
+#info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

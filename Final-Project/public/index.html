@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  CS 132
+  Cowtech
+  Author: Mia Mutadich
+
+  This is an e-commerce store that displays products and allows users to filter products, 
+  view items individually, suggest items to be added, purchase bundles and view their basket.
+  This file will display all of the products, allowing users to filter them by selecting 
+  different parts of the cow image, and also will display the user's basket when requested.
+-->
+   
+<head>
+    <title>COWTECH</title>
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Roboto+Mono">
+    <link href="styles.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <script src="utils.js"></script>
+    <script src="index.js" defer></script>
+</head>
+
+<body>   
+    <main>
+        <h1>
+            <a href="http://localhost:8000/">
+                 COWTECH
+            </a>
+        </h1>
+
+        <nav>
+            <h3 id="show-bundles">
+                Bundles
+            </h3>
+            <h3 id="add-tem">
+                <a href="/form.html">
+                    Add Item
+                </a>
+            </h3>
+            <h3 id="basket">Basket</h3>
+        </nav>
+
+        <aside class="hidden">
+            <h2>
+                Basket
+            </h2>
+            <section id="added-items">
+
+            </section>
+
+        </aside>
+
+        <div id="composite">
+            <img id="cow" alt="cow" src="imgs/sections/cow-sectioned.png">
+            <img id="hindquarter" alt="hindquarter" src="imgs/sections/cow-sec-white-hindquarter.png">
+            <img id="midsection" alt="midsection" src="imgs/sections/cow-sec-white-midsection.png">
+            <img id="forequarter" alt="forequarter" src="imgs/sections/cow-sec-white-forequarter.png">
+            <img id="dairy" alt="dairy" src="imgs/sections/cow-sec-white-dairy.png">
+        </div>
+
+        <section id="product-view">
+
+        </section>
+
+        <section id="bundle" class="hidden">
+            <h2>
+                BUNDLES
+            </h2>
+            <h3>Charcuterie Board For Two</h3>
+            <section class="bundle-option">
+                <div class="bundle">
+                    <h4>
+                        Cheese Option 1
+                    </h4>
+                    <img class="bundle-select-img" src="imgs/brie.jpg" alt="cheese option 1">
+                    <select class="bundle-select" name="dairy">
+                        <option value="Butter">Butter</option>
+                        <option value="Edam">Edam</option>
+                        <option value="Brie" selected>Brie</option>
+                    </select>
+                </div>
+
+                <img id="plus" src="imgs/plus.png" alt="plus">
+                <div class="bundle">
+                    <h4>
+                        Cheese Option 2
+                    </h4>
+                    <img class="bundle-select-img" src="imgs/edam.jpg" alt="cheese option 2">
+                    <select class="bundle-select" name="dairy">
+                        <option value="Blue Cheese">Blue Cheese</option>
+                        <option value="Edam" selected>Edam</option>
+                        <option value="Brie">Brie</option>
+                    </select>
+                </div>
+
+                <img id="plus" src="imgs/plus.png" alt="plus">
+                <div class="bundle">
+                    <h4>
+                        Cured Meat
+                    </h4>
+                    <img class="bundle-select-img" src="imgs/chuck.jpeg" alt="meat option 1">
+                    <select class="bundle-select" name="midsection">
+                        <option value="Chuck">Chuck</option>
+                        <option value="Rib">Rib</option>
+                        <option value="Sirloin" selected>Sirloin</option>
+                    </select>
+                </div>
+
+                <button class="add-button">Add To Basket</button>
+            </section>
+            <p class="hidden" id="message-area"></p>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p> All graphics created by Caitlyn Coloma.</p>
+    </footer>
+</body>
+
+</html>

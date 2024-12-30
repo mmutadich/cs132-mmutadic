@@ -1,0 +1,67 @@
+/**
+ * CS 132
+ *
+ * Author: Mia Mutadich
+ * CSS file for the individual product page of an e-commerce store that sells meats and dairy.
+ */
+
+body {
+    background-color: #ffb6c1;
+}
+
+button, select {
+    margin-bottom: 15px;
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: xx-large;
+}
+
+section, ul li {
+    font-size: 1.5vw;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+h2, li > a, a:hover{
+    color: #AA336A;
+}
+
+ul li {
+    padding: 5px 0px;
+}
+
+h3 {
+    margin: 1em;
+}
+
+section img {
+    width: 300px;
+    padding: 15px 0px;
+}
+
+button:hover {
+    background-color: #AA336A;
+    border-color: #AA336A;
+}
+
+#info-container, #flex-order, #size {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#price {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-style: italic;
+}
+
+#info {
+    width: 40%;
+}

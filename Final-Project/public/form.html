@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  CS 132
+  Cowtech
+  Author: Mia Mutadich
+
+  This is an e-commerce store that displays products and allows users to filter products, 
+  view items individually, suggest items to be added, purchase bundles and view their basket.
+  This file will display a form that allows users to suggest a new item to add to the store.
+-->
+
+<head>
+    <title>COWTECH</title>
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Roboto+Mono">
+    <link href="styles.css" rel="stylesheet">
+    <link href="form.css" rel="stylesheet">
+    <script src="utils.js"></script>
+    <script defer src="form.js"></script>
+</head>
+
+<body>
+    <main>
+        <h1>
+            <a href="http://localhost:8000/">
+                COWTECH
+            </a>
+        </h1>
+        <section id="info-container">
+            <h2> 
+                Suggest an Item
+            </h2>
+            <img src="imgs/cow-imgs/cow-sec-dairy.png" alt="dairy">
+            <form id="newItemForm">
+                <label for="name">Name:</label>
+                <input type="text" class="form-field" name="name" id="name" required pattern="[A-Za-z ]{2,}" title="Must be at least 5 characters long with only letters and spaces.">
+        
+                <label for="category">Category:</label>
+                <select id="category" class="form-field" name="category">
+                    <!-- Javascript will dynamically populate using GET request -->
+                </select>
+                <label for="description" id="node-after">Description:</label>
+                <input type="text" name="description" class="form-field" id="description" required pattern="[A-Za-z ]{5,}" title="Must be at least 5 characters long with only letters and spaces.">
+                <input type="submit" id="submit">
+            </form>
+            <p id="message-area">
+                <!-- Javascript will set this based on the POST request -->
+            </p>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
