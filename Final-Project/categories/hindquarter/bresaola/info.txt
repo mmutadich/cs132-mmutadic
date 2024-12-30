@@ -1,0 +1,5 @@
+14.30
+3
+bresaola.jpg
+Bresaola is air-dried, salted beef that has been aged two or three months until it becomes hard and turns a dark red color.
+{"Bresaola with Arugula and Parmesan": "https://example.com/bresaola-arugula-parmesan", "Bresaola Wrapped Melon": "https://example.com/bresaola-wrapped-melon"}

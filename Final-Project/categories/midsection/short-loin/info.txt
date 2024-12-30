@@ -1,0 +1,5 @@
+19.50
+6
+short-loin.jpeg
+Shortloin is a premium cut of beef that includes part of the spine and is known for its tenderness, yielding steaks such as T-bones and porterhouses.
+{"Grilled T-Bone Steak": "https://example.com/grilled-t-bone-steak", "Pan-Seared Porterhouse Steak": "https://example.com/pan-seared-porterhouse"}

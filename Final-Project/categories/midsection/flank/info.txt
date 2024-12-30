@@ -1,0 +1,5 @@
+12.75
+5
+flank.jpeg
+Flank steak is known for its strong beefy flavor and lean cut, suitable for a variety of dishes including fajitas.
+{"Marinated Flank Steak": "https://example.com/marinated-flank-steak", "Stuffed Flank Steak Rolls": "https://example.com/stuffed-flank-steak-rolls"}

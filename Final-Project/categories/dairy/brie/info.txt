@@ -1,0 +1,5 @@
+8.25
+8
+brie.jpg
+Brie is a soft cow's-milk cheese named after the French region from which it originated. It has a creamy interior with a soft, edible rind.
+{"Brie and Apple Tart": "https://example.com/brie-apple-tart","Baked Brie with Honey": "https://example.com/baked-brie-honey"}

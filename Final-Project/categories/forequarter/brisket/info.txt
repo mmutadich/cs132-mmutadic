@@ -1,0 +1,5 @@
+15.75
+5
+brisket.jpeg
+Brisket is a cut of meat from the breast or lower chest, known for its rich flavor and suitability for slow cooking.
+{"Slow Cooked Beef Brisket": "https://example.com/slow-cooked-brisket", "BBQ Beef Brisket Sandwiches": "https://example.com/bbq-brisket-sandwiches"}

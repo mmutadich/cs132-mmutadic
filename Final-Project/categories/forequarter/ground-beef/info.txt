@@ -1,0 +1,5 @@
+6.50
+10
+ground-beef.jpeg
+Ground beef, commonly used for burgers and meatballs, is versatile and comes from various cuts of beef.
+{"Classic Beef Burgers": "https://example.com/classic-beef-burgers", "Beef Bolognese Sauce": "https://example.com/beef-bolognese"}

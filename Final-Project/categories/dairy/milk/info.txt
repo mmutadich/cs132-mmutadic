@@ -1,0 +1,5 @@
+12.99
+10
+milk.jpeg
+Milk is a nutritious liquid that mammals produce in mammary glands to feed their young; the most commonly consumed types come from cows, sheep, and goats.
+{"Iced Latte": "https://example.com/iced-latte", "Homemade Yogurt": "https://example.com/homemade-yogurt"}

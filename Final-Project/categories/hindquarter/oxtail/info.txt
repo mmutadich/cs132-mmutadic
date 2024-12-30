@@ -1,0 +1,5 @@
+11.20
+5
+oxtail.webp
+Ox-tail refers to the tail of cattle and is used in a variety of hearty stews and soups.
+{"Traditional Oxtail Stew": "https://example.com/traditional-oxtail-stew", "Spicy Oxtail Soup": "https://example.com/spicy-oxtail-soup"}

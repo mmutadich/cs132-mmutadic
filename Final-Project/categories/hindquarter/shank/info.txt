@@ -1,0 +1,5 @@
+7.50
+5
+shank.jpeg
+Shank is a cut of meat derived from the legs, rich in connective tissues that provide flavor and gelatin when slow-cooked.
+{"Braised Beef Shank": "https://example.com/braised-beef-shank", "Beef Shank Osso Buco": "https://example.com/beef-shank-osso-buco"}

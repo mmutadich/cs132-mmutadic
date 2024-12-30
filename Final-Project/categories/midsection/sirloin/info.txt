@@ -1,0 +1,5 @@
+16.75
+12
+sirloin.jpeg
+Sirloin is a prime cut located near the rear of the cow, above the loin, offering a good balance of flavor and tenderness.
+{"Sirloin Tip Roast": "https://example.com/sirloin-tip-roast", "Grilled Sirloin Steak with Chimichurri": "https://example.com/grilled-sirloin-chimichurri"}

@@ -1,0 +1,5 @@
+7.00
+20
+butter.jpeg
+Discover the rich, creamy delight of our butter—perfect for transforming any dish into a gourmet experience!
+{"Butter Garlic Prawns": "https://example.com/butter-garlic-prawns", "Classic Butter Cookies": "https://example.com/classic-butter-cookies"}

@@ -1,0 +1,5 @@
+18.00
+7
+ribs.webp
+Rib cuts include the ribeye steaks and rib roasts, known for their rich marbling and tenderness.
+{"Prime Rib Roast": "https://example.com/prime-rib-roast", "Ribeye Steak with Garlic Butter": "https://example.com/ribeye-steak-garlic-butter"}

@@ -1,0 +1,5 @@
+13.00
+4
+rump.jpeg
+Rump cut is from the hindquarters, known for its lean texture and flavorful taste, making it perfect for steaks and roasts.
+{"Rump Steak with Herb Butter": "https://example.com/rump-steak-herb-butter", "Peppered Rump Roast": "https://example.com/peppered-rump-roast"}

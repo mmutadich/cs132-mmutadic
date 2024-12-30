@@ -1,0 +1,5 @@
+7.00
+15
+edam.jpg
+Edam originates from the Netherlands and is known for its mild flavor and firm texture, often coated in a red wax.
+{"Edam Cheese Ball": "https://example.com/edam-cheese-ball", "Edam and Ham Pie": "https://example.com/edam-ham-pie"}

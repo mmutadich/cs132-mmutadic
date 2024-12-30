@@ -1,0 +1,5 @@
+12.99
+10
+blue-cheese.jpg
+Blue cheese is known for its characteristic blue or blue-green mold and sharp, salty flavor.
+{"Blue Cheese Salad": "https://example.com/blue-cheese-salad", "Blue Cheese Dip": "https://example.com/blue-cheese-dip"}

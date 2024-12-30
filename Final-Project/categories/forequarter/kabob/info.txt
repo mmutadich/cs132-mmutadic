@@ -1,0 +1,5 @@
+9.50
+7
+kebob.jpeg
+Kabob meat is typically marinated and cut into cubes for skewering and grilling, offering a savory and tender eating experience.
+{"Grilled Beef Kabobs": "https://example.com/grilled-beef-kabobs", "Middle Eastern Beef Kabobs": "https://example.com/middle-eastern-beef-kabobs"}

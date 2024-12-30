@@ -1,0 +1,5 @@
+12.00
+7
+chuck.jpeg
+Chuck is a cut of beef and is part of the subprimal cut known as the shoulder. It's favored for its beefy flavor and is used in stews and roasts.
+{"Beef Chuck Chili": "https://example.com/beef-chuck-chili", "Chuck Steak Fajitas": "https://example.com/chuck-steak-fajitas"}
